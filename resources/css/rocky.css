@@ -1,0 +1,11 @@
+.footer-link {
+    @apply text-sm leading-5 font-semibold text-gray-50 tracking-wider underline uppercase;
+}
+
+#navbar {
+    z-index: 99;
+}
+
+:root {
+    font-family: 'Playfair Display', serif;
+}
