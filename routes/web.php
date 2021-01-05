@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\ScheduleController;
+use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +18,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/blog', [BlogController::class, 'index']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::get('/admin/create-blog-post', function()
+{
+    return view('admin.create');
+});
+
+Route::get('/admin', function(){
+    return view('admin.index');
+});
+
+Route::get('/portfolio', [PortfolioController::class, 'index']);
+
+Route::get('/services', [ServiceController::class, 'index']);
+
+Route::get('/schedule', [ScheduleController::class, 'index']);
+
+Route::post('/schedule', [ScheduleController::class, 'store'])->name('schedule-meeting');

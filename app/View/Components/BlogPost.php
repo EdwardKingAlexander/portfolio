@@ -2,6 +2,8 @@
 
 namespace App\View\Components;
 
+use App\Models\Blog;
+use App\Models\Tag;
 use Illuminate\View\Component;
 
 class BlogPost extends Component
@@ -18,7 +20,7 @@ class BlogPost extends Component
      */
     public function __construct()
     {
-        //
+       
     }
 
     /**
@@ -28,6 +30,9 @@ class BlogPost extends Component
      */
     public function render()
     {
-        return view('components.blog-post');
+        return view('components.blog-post')
+        ->with('posts', Blog::latest()->limit(3)->get())
+        ->with('tags', Tag::all());
+        
     }
 }
