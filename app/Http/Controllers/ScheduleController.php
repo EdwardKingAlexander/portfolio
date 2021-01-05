@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactForm;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -21,10 +22,8 @@ class ScheduleController extends Controller
           'summary' => 'required|string'
         ]);
 
-        Mail::raw('It works!', function($message) {
-            $message->to(request('email'))
-            ->subject('hello mane!');
-        });
+       Mail::to(request('email'))
+       ->send(new ContactForm($request->name));
 
         return redirect('/schedule')
         ->with('message', 'Your email has been sent. We will contact you very soon. Thank you!');
