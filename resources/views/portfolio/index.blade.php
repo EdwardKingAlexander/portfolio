@@ -71,11 +71,11 @@
      
         
 
-        <div class="w-1/2 col-span-1 mx-auto my-auto">
+        <div class="w-1/2 col-span-2 mx-auto my-auto md:col-span-1">
         <h2 class="text-4xl text-left">Absolutely Clear Window Cleaning LLC</h2>
         </div>
 
-        <div class="justify-center col-span-1">
+        <div class="justify-center col-span-2 md:col-span-1">
             <img 
             class="rounded" 
             src="{{ asset('/img/chuck.gif') }}" 
@@ -95,11 +95,11 @@
      
         
 
-        <div class="w-1/2 col-span-1 mx-auto my-auto">
+        <div class="w-1/2 col-span-2 mx-auto my-auto md:col-span-1">
             <h2 class="text-4xl text-left">Khan Industrial Supply LLC </h2>
         </div>
 
-        <div class="justify-center col-span-1">
+        <div class="justify-center col-span-2 md:col-span-1">
             <img 
             class="rounded" 
             src="{{ asset('/img/chuck.gif') }}" 
@@ -117,7 +117,7 @@
 
     <div id="consult" class="flex items-center justify-center h-screen bg-white ">
         <div>
-        <a href="{{ url('/schedule') }}" class="p-5 text-6xl text-center text-white underline bg-gray-900 rounded hover:text-blue-600">
+        <a href="{{ url('/schedule') }}" class="p-5 text-3xl text-center text-white underline bg-gray-900 rounded md:text-6xl hover:text-blue-600">
                 Request a Consultation
             </a>
         </div>
