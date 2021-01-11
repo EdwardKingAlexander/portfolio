@@ -82,13 +82,13 @@
         
 
         <div class="w-1/2 col-span-2 mx-auto my-auto md:col-span-1">
-        <h2 class="text-4xl text-left"><a href="https://www.professionalwindowcleaning.com" title="Link to the Absolutely Clear Window Cleaning Website">Absolutely Clear Window Cleaning LLC</a></h2>
+        <h2 class="text-4xl text-left"><a class="hover:text-blue-800" href="https://www.professionalwindowcleaning.com" title="Link to the Absolutely Clear Window Cleaning Website">Absolutely Clear Window Cleaning LLC</a></h2>
         </div>
 
         <div class="justify-center col-span-2 md:col-span-1">
             <img 
             class="rounded" 
-            src="{{ asset('/img/chuck.gif') }}" 
+            src="{{ asset('/img/window-cleaning.gif') }}" 
             alt="">
         </div>
 
@@ -106,20 +106,20 @@
         
 
         <div class="w-1/2 col-span-2 mx-auto my-auto md:col-span-1">
-            <h2 class="text-4xl text-left">Khan Industrial Supply LLC </h2>
+            <h2 class="text-4xl text-left"><a title="Link to Khan Industrial Supply Website" class="hover:text-blue-800" href="https://khan.supply">Khan Industrial Supply LLC</a></h2>
         </div>
 
         <div class="justify-center col-span-2 md:col-span-1">
             <img 
             class="rounded" 
-            src="{{ asset('/img/chuck.gif') }}" 
+            src="{{ asset('/img/khan.gif') }}" 
             alt="">
         </div>
 
         <hr class="text-white">
 
         <div class="w-4/5 col-span-3">
-            <p class="text-2xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt facilis odit sequi provident nesciunt earum optio, necessitatibus exercitationem fugiat distinctio vitae eum ipsa dicta dolore hic recusandae magnam commodi? Ipsum.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error ab, dolorem provident alias aliquid tenetur laborum excepturi ratione. Laborum ad deserunt praesentium, fugit sapiente animi aliquam veniam voluptate omnis delectus?</p>
+            <p class="text-2xl">Khan Industrial Supply LLC is an industrial supplier to businesses and the government. Utilizing their supplier network, they supply every industry from welding and metalworking, to manufacturing, and even to general maintenance. Though they have access to at least 12 large distribution centers strategically located across the United States for general maintenance and typical industrial products, they are also local and based in Colorado Springs, Colorado.</p>
         </div>
     </div>
 
