@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/rocky.css') }}">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D54E6WT6JF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D54E6WT6JF');
+</script>
+
     <style>
 
         #portfolio-top {
@@ -45,7 +55,7 @@
         }
     </style>
     
-    <title>Document</title>
+    <title>Rocky Mountain Web Design LLC - Portfolio Page</title>
 </head>
 <body  class="bg-blue-400">
 
@@ -72,7 +82,7 @@
         
 
         <div class="w-1/2 col-span-2 mx-auto my-auto md:col-span-1">
-        <h2 class="text-4xl text-left">Absolutely Clear Window Cleaning LLC</h2>
+        <h2 class="text-4xl text-left"><a href="https://www.professionalwindowcleaning.com" title="Link to the Absolutely Clear Window Cleaning Website">Absolutely Clear Window Cleaning LLC</a></h2>
         </div>
 
         <div class="justify-center col-span-2 md:col-span-1">
@@ -85,7 +95,7 @@
         <hr class="text-blue-400">
 
         <div class="w-4/5 col-span-2">
-            <p class="text-2xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt facilis odit sequi provident nesciunt earum optio, necessitatibus exercitationem fugiat distinctio vitae eum ipsa dicta dolore hic recusandae magnam commodi? Ipsum.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error ab, dolorem provident alias aliquid tenetur laborum excepturi ratione. Laborum ad deserunt praesentium, fugit sapiente animi aliquam veniam voluptate omnis delectus?</p>
+            <p class="text-2xl">Absolutely Clear Window Cleaning LLC is a local, veteran owned, small business located in Colorado Springs, Colorado. Servicing the Colorado Springs community and surrounding communities all along the front range for over 20 years, they provide commercial and residential window cleaning, gutter cleaning, pressure washing, and additional services. They have a 100& satisfaction guarantee and have an overall 5 out of 5 rating on Google.</p>
         </div>
     </div>
 
