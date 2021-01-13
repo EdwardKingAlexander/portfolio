@@ -1,3 +1,4 @@
+@if(!$posts->isEmpty())
 <div>
     <div class="container grid w-3/4 max-w-lg gap-5 p-5 mx-auto lg:grid-cols-2 lg:max-w-none">
 
@@ -67,3 +68,18 @@
       </div>
             
 </div>
+@else 
+<div>
+  <div class="container mx-auto">
+    <h1 class="p-5 text-4xl text-center">There are currently no blog posts.</h1>
+    <p class="w-1/2 pb-5 mx-auto text-2xl text-center">
+      Stay tuned! We will be writing new blog posts very soon! Make sure and subscribe to our newsletter for notifications of all of our blog posts, promotions, and all other updates!
+    </p>
+
+    <p class="w-1/2 pb-5 mx-auto text-2xl text-center">
+      Thank You!
+    </p>
+    
+  </div>
+</div>
+@endif
