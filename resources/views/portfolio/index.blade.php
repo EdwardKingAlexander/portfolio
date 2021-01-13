@@ -95,7 +95,10 @@
         <hr class="text-blue-400">
 
         <div class="w-4/5 col-span-2">
-            <p class="text-2xl">Absolutely Clear Window Cleaning LLC is a local, veteran owned, small business located in Colorado Springs, Colorado. Servicing the Colorado Springs community and surrounding communities all along the front range for over 20 years, they provide commercial and residential window cleaning, gutter cleaning, pressure washing, and additional services. They have a 100& satisfaction guarantee and have an overall 5 out of 5 rating on Google.</p>
+            <p class="text-2xl">Absolutely Clear Window Cleaning LLC is a local, veteran owned, small business located in Colorado Springs, Colorado.</p>
+            <br>
+            <p class="text-2xl">Servicing the Colorado Springs community and surrounding communities all along the front range for over 20 years, they provide commercial and residential window cleaning, gutter cleaning, pressure washing, and additional services.</p> <br>
+            <p class="text-2xl"> They have a 100% satisfaction guarantee and have an overall 5 out of 5 rating on Google.</p>
         </div>
     </div>
 
@@ -119,7 +122,11 @@
         <hr class="text-white">
 
         <div class="w-4/5 col-span-3">
-            <p class="text-2xl">Khan Industrial Supply LLC is an industrial supplier to small businesses and the government. Utilizing their supplier network, they supply every industry from welding and metalworking, to manufacturing, and even to general maintenance. Though they have access to at least 12 large distribution centers strategically located across the United States for general maintenance and typical industrial products, they are also local and based in Colorado Springs, Colorado.</p>
+            <p class="text-2xl">Khan Industrial Supply LLC is an industrial supplier focused on small businesses and the government.</p>
+            <br>
+            <p class="text-2xl">
+                Utilizing their supplier network, they supply every industry from welding and metalworking, to manufacturing, and even to general maintenance departments. Though they have access to at least 12 large distribution centers strategically located across the United States for general maintenance and typical industrial products, they are also local and based in Colorado Springs, Colorado.
+            </p>
         </div>
     </div>
 
