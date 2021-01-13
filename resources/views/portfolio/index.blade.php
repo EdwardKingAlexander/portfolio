@@ -119,7 +119,7 @@
         <hr class="text-white">
 
         <div class="w-4/5 col-span-3">
-            <p class="text-2xl">Khan Industrial Supply LLC is an industrial supplier to businesses and the government. Utilizing their supplier network, they supply every industry from welding and metalworking, to manufacturing, and even to general maintenance. Though they have access to at least 12 large distribution centers strategically located across the United States for general maintenance and typical industrial products, they are also local and based in Colorado Springs, Colorado.</p>
+            <p class="text-2xl">Khan Industrial Supply LLC is an industrial supplier to small businesses and the government. Utilizing their supplier network, they supply every industry from welding and metalworking, to manufacturing, and even to general maintenance. Though they have access to at least 12 large distribution centers strategically located across the United States for general maintenance and typical industrial products, they are also local and based in Colorado Springs, Colorado.</p>
         </div>
     </div>
 
