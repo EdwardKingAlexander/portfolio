@@ -22,8 +22,8 @@ class ScheduleController extends Controller
           'summary' => 'required|string'
         ]);
 
-       Mail::to(request('email'))
-       ->send(new ContactForm($request->name));
+       Mail::to('edward@rockymountainweb.design')
+       ->send(new ContactForm($request->name, $request->email, $request->number, $request->summary));
 
         return redirect('/schedule')
         ->with('message', 'Your email has been sent. We will contact you very soon. Thank you!');

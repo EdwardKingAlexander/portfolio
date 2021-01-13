@@ -24,7 +24,7 @@
 
                 <label class="text-xl" for="name">Your Name:</label>
                 <br>
-                <input class="mb-5 rounded" value="{{ old('name') }}" type="text" name="name"  id="">
+                <input class="mb-5 rounded" value="{{ old('name') }}" autocomplete="name" type="text" name="name"  id="">
                 <br>
                 @error('name')
         <div class="text-lg text-red-500">{{ $message }}</div>
@@ -33,7 +33,7 @@
 
                 <label class="text-xl" for="email">Your Email:</label>
                 <br>
-        <input class="mb-5 rounded" value="{{ old('email') }}" type="email" name="email"  id="">
+        <input class="mb-5 rounded" value="{{ old('email') }}" autocomplete="email" type="email" name="email"  id="">
                 <br>
 
                 @error('email')
@@ -43,7 +43,9 @@
 
                 <label class="text-xl" for="phone">Your Phone Number:</label>
                 <br>
-                <input class="mb-5 rounded" type="tel" value="{{ old('number') }}" name="number"  id="">
+                <small class="text-lg text-green-500">Format: xxxxxxxxxx (No Dashes or spaces)</small>
+                <br>
+                <input class="mb-5 rounded" type="tel" placeholder="xxxxxxxxxx" autocomplete="tel" value="{{ old('number') }}" name="number"  id="">
                 <br>
                 @error('number')
                 <div class="text-lg text-red-500">{{ $message }}</div>
@@ -52,7 +54,9 @@
 
                 <label class="text-xl" for="summary">Describe a brief description of what service/s you're interested in:</label>
                 <br>
-                <textarea class="mb-5 rounded" name="summary" value="{{ old('summary') }}" id="" rows="10"></textarea>
+                <textarea class="mb-5 rounded" name="summary" id="" rows="10">
+                        {{ old('summary') }}
+                </textarea>
                 @error('summary')
                 <div class="text-lg text-red-500">{{ $message }}</div>
                 <br>

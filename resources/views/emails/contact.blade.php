@@ -10,13 +10,19 @@
 </head>
 <body>
     <h1>
-        Hey {{ $name }}! Thank you for your interest!
+        {{ $name }} has requested a consultation! 
     </h1>
     <hr>
 
-    <h3>
-        We will get in touch with you as soon as possible
-    </h3>
+    <h2 class="text-center">
+        - Their email is {{ $email }}. 
+        <br>
+        - Their phone number is {{ $phoneNumber }}
+        <br>
+        - What they are looking for is:
+        <br>
+        {{ $summary }}
+    </h2>
     
     @include('partials.footer')
 </body>
