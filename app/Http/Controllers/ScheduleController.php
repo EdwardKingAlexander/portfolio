@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\ContactForm;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use App\Rules\Recaptcha;
 
 class ScheduleController extends Controller
 {
@@ -15,11 +16,14 @@ class ScheduleController extends Controller
 
     public function store(Request $request)
     {
+
+    
         $request->validate([
           'name' => 'required|min:6|max:50|string',
           'email' => 'required|email',
           'number' => 'required|integer|',
-          'summary' => 'required|string'
+          'summary' => 'required|string',
+          'g-recaptcha-response' => ['required', new Recaptcha]
         ]);
 
        Mail::to('edward@rockymountainweb.design')

@@ -1,5 +1,11 @@
 <x-guest-layout>
-@section('title', 'Schedule a Consultation for Web Services')
+
+        @section('title', 'Schedule a Consultation for Web Services')
+
+        @section('head')
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        @endsection
+
         <h1 class="w-1/2 p-5 mx-auto text-xl text-center text-bold md:text-5xl">Fill out this form to schedule your consultation:</h1>
         
         @if(session('message'))
@@ -63,6 +69,14 @@
                 @enderror
 
                 <br>
+                <div class="inline-block">
+                        <div class="pb-2 text-center g-recaptcha" data-theme="dark light" data-sitekey="{{ config('services.recaptcha.key') }}"></div>
+                </div>
+      <br/>
+      @error('g-recaptcha-response')
+      <div class="text-lg text-red-500">You must verify you are not a robot!!</div>
+      <br>
+      @enderror
                
                 <input class="p-3 text-xl text-white bg-blue-400 rounded text-bold" type="submit" value="Submit Contact Info">
 
