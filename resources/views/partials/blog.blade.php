@@ -15,12 +15,6 @@
 
     <div class="grid max-w-lg gap-5 mx-auto mt-12 lg:grid-cols-3 lg:max-w-none">
 
-     
-        
-    <x-blog-post>
-      
-    </x-blog-post>
-
       
     </div>
     <div class="mt-3 text-xl text-center underline hover:text-blue-400">
