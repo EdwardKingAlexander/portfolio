@@ -1,19 +1,19 @@
 <x-guest-layout>
 @section('title', 'Schedule a Consultation for Web Services')
-        <h1 class="w-1/2 p-5 mx-auto text-5xl text-center">Fill out this form to schedule your consultation:</h1>
+        <h1 class="w-1/2 p-5 mx-auto text-xl text-center text-bold md:text-5xl">Fill out this form to schedule your consultation:</h1>
         
         @if(session('message'))
 
         @else 
         <div class="text-center">
-            <small class="text-lg text-red-600 underline">All Fields Are Required</small>
+            <small class="text-red-600 underline md:text-lg text-md">All Fields Are Required</small>
 
         </div>
 
         @endif
 
         <div class="flex items-center p-5">
-        <form action="{{ route('schedule-meeting') }}" method="POST" class="w-1/2 p-10 mx-auto my-auto text-center border rounded shadow">
+        <form action="{{ route('schedule-meeting') }}" method="POST" class="w-full p-10 mx-auto my-auto text-center border rounded shadow md:w-1/2">
                 @csrf 
 
                 @if(session('message'))
@@ -52,7 +52,7 @@
 
                 <label class="text-xl" for="summary">Describe a brief description of what service/s you're interested in:</label>
                 <br>
-                <textarea class="mb-5 rounded" name="summary" value="{{ old('summary') }}" id="" cols="60" rows="10"></textarea>
+                <textarea class="mb-5 rounded" name="summary" value="{{ old('summary') }}" id="" rows="10"></textarea>
                 @error('summary')
                 <div class="text-lg text-red-500">{{ $message }}</div>
                 <br>
