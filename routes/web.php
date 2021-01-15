@@ -41,3 +41,7 @@ Route::get('/services', [ServiceController::class, 'index']);
 Route::get('/schedule', [ScheduleController::class, 'index']);
 
 Route::post('/schedule', [ScheduleController::class, 'store'])->name('schedule-meeting');
+
+Route::get('/test', ['middleware' => 'admin', function () {
+    return 'works';
+}]);
