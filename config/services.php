@@ -33,4 +33,9 @@ return [
         'key' => env('GOOGLE_RECAPTCHA_KEY'),
         'secret' => env('GOOGLE_RECAPTCHA_SECRET'),
         ],
+        'linkedin' => [
+            'client_id' => env('LINKEDIN_CLIENT_ID'),
+            'client_secret' => env('LINKEDIN_CLIENT_SECRET'),
+            'redirect' => env('LINKEDIN_CALLBACK_URL'),
+        ],
 ];

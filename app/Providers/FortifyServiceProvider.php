@@ -8,6 +8,7 @@ use App\Actions\Fortify\UpdateUserPassword;
 use App\Actions\Fortify\UpdateUserProfileInformation;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Fortify\Fortify;
+use Illuminate\Support\Facades\Route;
 
 class FortifyServiceProvider extends ServiceProvider
 {
@@ -18,7 +19,7 @@ class FortifyServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        Fortify::ignoreRoutes();
     }
 
     /**
@@ -32,5 +33,25 @@ class FortifyServiceProvider extends ServiceProvider
         Fortify::updateUserProfileInformationUsing(UpdateUserProfileInformation::class);
         Fortify::updateUserPasswordsUsing(UpdateUserPassword::class);
         Fortify::resetUserPasswordsUsing(ResetUserPassword::class);
+
+        $this->configureRoutes();
+    }
+
+      /**
+     * Configure the routes offered by the application.
+     *
+     * @return void
+     */
+    protected function configureRoutes()
+    {
+        Route::group(
+            [
+                'namespace' => 'Laravel\Fortify\Http\Controllers',
+                'domain' => config('fortify.domain', null),
+                'prefix' => config('fortify.prefix'),
+            ], function () {
+                $this->loadRoutesFrom(base_path('routes/fortify.php'));
+            });
+        
     }
 }
