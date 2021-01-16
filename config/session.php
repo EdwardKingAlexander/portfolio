@@ -155,7 +155,7 @@ return [
     |
     */
 
-    'domain' => env('SESSION_DOMAIN', "http://www.rockymountainweb.design"),
+    'domain' => env('SESSION_DOMAIN', "localhost"),
 
     /*
     |--------------------------------------------------------------------------
