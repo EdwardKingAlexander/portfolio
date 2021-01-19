@@ -110,7 +110,7 @@
     </div>
   </div>
 
-  <hr>
+  @include('partials.call-to-action')
 
 
   <div class="relative py-16 overflow-hidden bg-white">
