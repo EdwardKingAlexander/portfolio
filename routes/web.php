@@ -9,6 +9,7 @@ use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SocialUser\DeleteThisUser;
 use App\Http\Controllers\Admin\AdminDashboardController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\WhyUsController;
 
 /*
@@ -69,3 +70,5 @@ Route::get('/test', ['middleware' => 'admin', function () {
 }]);
 
 Route::get('/why-us', [WhyUsController::class, 'index']);
+
+Route::get('/contact-us', [ContactController::class, 'index']);
