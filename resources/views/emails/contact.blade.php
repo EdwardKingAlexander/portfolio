@@ -17,8 +17,17 @@
     <h2 class="text-center">
         - Their email is {{ $email }}. 
         <br>
+        - Their company is {{ $company }}
+        <br>
+  
         - Their phone number is {{ $phoneNumber }}
         <br>
+        - Their budget is {{ $budget }}
+        <br>
+        @if($reference != null)
+        - They heard about us from {{ $reference }}
+        <br>
+        @endif
         - What they are looking for is:
         <br>
         {{ $summary }}

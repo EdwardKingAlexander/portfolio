@@ -15,6 +15,9 @@ class ContactForm extends Mailable
     public $email;
     public $phoneNumber;
     public $summary;
+    public $company;
+    public $budget;
+    public $reference;
 
 
     /**
@@ -22,12 +25,15 @@ class ContactForm extends Mailable
      *
      * @return void
      */
-    public function __construct($name, $email, $phoneNumber, $summary)
+    public function __construct($name, $email, $phoneNumber, $summary, $company, $budget, $reference)
     {
         $this->name = $name;
         $this->email = $email;
         $this->phoneNumber = $phoneNumber;
         $this->summary = $summary;
+        $this->company = $company;
+        $this->budget = $budget;
+        $this->reference = $reference;
     }
 
     /**
