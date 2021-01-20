@@ -147,19 +147,19 @@
         <h1>
           <span class="block mt-2 text-3xl font-extrabold leading-8 tracking-tight text-center text-gray-900 sm:text-4xl">Our Expertise</span>
         </h1>
-        <p class="mt-8 text-xl leading-8 text-gray-500">With a decade of business to business sales experience, in addition to our web application design and implementation experience, we understand that each business has a unique set of goals and needs in order to maximize their business</p>
+        <p class="mt-8 text-xl leading-8 text-gray-500">With a decade of business to business sales experience, in addition to our web application design and implementation experience, we understand that each business has a unique set of goals and needs in order to maximize their business operations.</p>
       </div>
       <div class="mx-auto mt-6 prose prose-lg text-gray-500 prose-blue">
-        <p>While no two businesses are exactly the same, we understand that <strong>all</strong> businesses invest in products and services that will <strong>grow their customer base</strong>. Developing an effective website is more than just making a site that looks good. A truly effective website will have several things:</p>
+        <p>While no two businesses are exactly the same, we understand that <strong>all</strong> businesses invest in products and services that will <strong>grow their profts and customer base</strong>. Developing an effective website is more than just making a site that looks good. A truly effective website will have several things:</p>
         <ul>
-          <li>Research into not only the customers you want to taget, but also research into what those customers look for when trying to find a business like you.</li>
+          <li>Research into not only the customers you want to tagret, but also research into what those customers look for when trying to find a business like you.</li>
           <li>Effective design to capture the attention of the audience.</li>
           <li>A clear purpose of the website and an easy way to take that action.</li>
         </ul>
-        <p>This is where we really shine. Many businesses can get a very cheap website done that looks appealing. Many times however, the focus is purely on how the website looks, and not on targeting a specific client base. Imagine paying for a billboard selling sand, only to have it up in the desert. People may see it, but the wrong people.</p>
+        <p>This is where we really shine. Businesses can get a very cheap website from the internet that looks appealing. Many times however, the focus is purely on how the website looks, and not on targeting a specific client base, SEO friendly design, or a scalable foundation. Imagine paying for a billboard selling sand, only to have it up in the desert. People may see it, very few, and even then, they won't be who you want or need to see it.</p>
 
         <h2>We focus on business growth</h2>
-        <p>We take a business first approach in order to maximize your client base. Designing and devloping an website is the easy part, targeting the right customers and getting them to take action is where tangible results come from with an online presence. Focusing on this first, allows us to design and implement everything else around it, giving you a significantly higher chance of increasing your sales.</p>
+        <p>A business first approach will help maximize your client base. Designing and devloping a website is the easy part. Targeting the right customers and getting them to take action is where tangible results come from with an online presence. Focusing on this first, allows us to design and implement everything else around it, giving you a significantly higher chance of increasing your sales.</p>
 
 
         <figure>
