@@ -7,7 +7,7 @@
 <div class="relative bg-white">
     <div class="lg:absolute lg:inset-0">
       <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img class="object-cover w-full h-56 lg:absolute lg:h-full" src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80" alt="">
+        <img class="object-cover w-full h-56 lg:absolute lg:h-full" src="{{ asset('img/schedule.jpg') }}" alt="picture of people sitting around a table in an office">
       </div>
     </div>
     <div class="relative px-4 pt-12 pb-16 sm:pt-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2">
@@ -103,7 +103,7 @@
             <br>
             @enderror
               <div class="flex justify-between">
-                <label for="how_can_we_help" class="block text-sm font-medium text-gray-700">How can we help you?</label>
+                <label for="how_can_we_help" class="block text-sm font-medium text-gray-700">How can we help you? *</label>
                 <span id="how_can_we_help_description" class="text-sm text-gray-500">Max. 500 characters</span>
               </div>
               <div class="mt-1">
@@ -119,7 +119,7 @@
             <br>
             @enderror
               <legend class="block text-sm font-medium text-gray-700">
-                Expected budget
+                Expected budget *
               </legend>
               <div class="grid grid-cols-1 mt-4 gap-y-4">
                 <div class="flex items-center">
