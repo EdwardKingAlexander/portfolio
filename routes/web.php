@@ -11,6 +11,7 @@ use App\Http\Controllers\SocialUser\DeleteThisUser;
 use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\WhyUsController;
+use App\Http\Middleware\Honeypot;
 
 /*
 |--------------------------------------------------------------------------
@@ -63,7 +64,7 @@ Route::get('/services', [ServiceController::class, 'index']);
 
 Route::get('/schedule', [ScheduleController::class, 'index']);
 
-Route::post('/schedule', [ScheduleController::class, 'store'])->name('schedule-meeting');
+Route::post('/schedule', [ScheduleController::class, 'store'])->middleware(Honeypot::class)->name('schedule-meeting');
 
 Route::get('/test', ['middleware' => 'admin', function () {
     return 'works';

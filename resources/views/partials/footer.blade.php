@@ -83,6 +83,8 @@
          
         </div>
       </div>
+
+
       <div class="mt-8 xl:mt-0">
         <h4 class="footer-link">
           Subscribe to our newsletter
@@ -94,7 +96,7 @@
           <label for="emailAddress" class="sr-only">Email address</label>
           <input type="email" id="emailAddress" required class="w-full min-w-0 px-4 py-2 text-base leading-6 text-gray-900 placeholder-gray-500 transition duration-150 ease-in-out bg-white border border-transparent rounded-md appearance-none focus:outline-none focus:shadow-outline-gray focus:placeholder-gray-400" placeholder="Enter your email">
           <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-            <button type="submit" class="flex items-center justify-center w-full px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-500 border border-transparent rounded-md hover:bg-indigo-400 focus:outline-none focus:border-indigo-600 focus:shadow-outline-indigo active:bg-indigo-600">
+            <button type="submit" class="flex items-center justify-center w-full px-4 py-2 text-base font-medium leading-6 text-blue-500 transition duration-150 ease-in-out bg-white border border-transparent rounded-md hover:bg-gray-200 focus:outline-none focus:border-blue-600 focus:shadow-outline-blue active:bg-blue-600">
               Subscribe
             </button>
           </div>

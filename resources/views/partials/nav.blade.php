@@ -6,7 +6,7 @@ id="navbar">
     <div class="relative flex items-center justify-between h-16">
       <div class="flex px-2 lg:px-0">
         <div class="flex items-center flex-shrink-0 jusitfy-between sm:h-10 lg:justify-start">
-          <a href="/" class="block w-auto h-full lg:hidden">
+          <a href="/" class="block w-auto h-full lg:hidden" title="Go to homepage">
             <img class="block w-auto h-16 lg:hidden" src="{{asset('img/logo-small.png')}}" alt="Rocky Mountain Web Design LLC logo">
           </a>
           

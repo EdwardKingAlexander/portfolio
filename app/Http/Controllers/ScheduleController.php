@@ -16,6 +16,7 @@ class ScheduleController extends Controller
 
     public function store(Request $request)
     {
+
         $request->validate([
           'name' => 'required|min:6|max:50|string',
           'email' => 'required|email',
