@@ -43,6 +43,6 @@ class Honeypot
 
     protected function abort()
     {
-        return abort(422, 'Spam detected');
+        return abort(404);
     }
 }
