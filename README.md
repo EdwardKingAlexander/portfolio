@@ -19,7 +19,7 @@ To install Portfolio, follow these steps:
 - install Composer Dependencies by running: "composer install" in your terminal
 - install NPM Dependencies by running: "npm install" in your terminal
 - create a .ENV file by running: "cp .env.example .env" in your terminal
-- generate and app encryption key by running: "php artisan key:generate"
+- generate an app encryption key by running: "php artisan key:generate"
 - create a database in your database tool of choice
 - add database information to your .env file
 - migrate the databse by running: "php artisan:migrate" in your terminal
