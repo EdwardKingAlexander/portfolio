@@ -61,6 +61,11 @@ class User extends Authenticatable
         'profile_photo_url',
     ];
 
+    /**
+     * Returns a boolean that determines whether a user is an admin
+     * 
+     */
+
     public function isAdmin()
     {
         return $this->admin;
