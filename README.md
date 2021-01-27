@@ -1,9 +1,5 @@
 <p align="center"><a href="https://rockymountainweb.design" target="_blank"><img src="https://rockymountainweb.design/img/logo.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
 ## Rocky Mountain Web Design LLC Portfolio
 
 Portfolio is a repository for the business site for Rocky Mountain Web Design LLC. It features an admin panel for site admins only that includes a CRM andthe ability to manage users, blog posts, and important reporting data for sales.
