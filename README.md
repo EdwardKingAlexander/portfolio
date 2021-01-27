@@ -33,9 +33,12 @@ To install Portfolio, follow these steps:
 To test this application, simply run: "php artisan:serve" in your terminal and click on the link provided to visit the application in the browser.
 
 ## Contact
+
 If you want to contact me, you can reach me at [Edward@RockyMountainWeb.Design](Edward@rockymountainweb.design)
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# portfolio
+Copyright (C) Rocky Mountain Web Design LLC - All Rights Reserved
+Unauthorized copying of this file, via any medium is strictly prohibited
+Proprietary and confidential
+Written by Daniel Edward Oliver <Edward@RockyMountainWeb.design>, January 27, 2021
