@@ -57,7 +57,7 @@ id="navbar">
         <button 
         @click="show = !show"
         @click.away = "show = !show"
-        @scroll= "show = !show"
+        @scroll.window= "show = !show"
         :aria-expanded = "show"
         class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500" 
         aria-label="Main menu" 
