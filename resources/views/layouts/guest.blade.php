@@ -30,6 +30,8 @@
         gtag('config', 'G-D54E6WT6JF');
         </script>
 
+    
+
         @yield('head')
     </head>
     <body>
@@ -46,3 +48,4 @@
         @livewireScripts
     </body>
 </html>
+;
