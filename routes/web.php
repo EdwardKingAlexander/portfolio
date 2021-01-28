@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginWithLinkedInController;
@@ -73,3 +74,4 @@ Route::get('/test', ['middleware' => 'admin', function () {
 Route::get('/why-us', [WhyUsController::class, 'index']);
 
 Route::get('/contact-us', [ContactController::class, 'index']);
+Route::get('/about-us', [AboutController::class, 'index']);

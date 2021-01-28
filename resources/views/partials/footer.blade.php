@@ -45,11 +45,11 @@
         <div class="md:grid md:grid-cols-2 md:gap-8">
 
         <x-footer-section section="Company">
-          <x-footer-link link="/">
+          <x-footer-link link="{{ url('about-us') }}">
             About
           </x-footer-link>
 
-          <x-footer-link link="/">
+          <x-footer-link link="{{ url('/blog') }}">
             Blog
           </x-footer-link>
 
