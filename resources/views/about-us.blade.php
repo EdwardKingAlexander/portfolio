@@ -47,7 +47,7 @@
             </ul>
             <p>I have a unique set of skills that allows me to develop websites and applications that solve problems. I have acquired these skills over many years of web development and account management. I really enjoy solving problems and helping businesses grow.</p>
             <h3>Who I Work With</h3>
-            <p>Over the years, I have developed a large network of industry professionals who have expertise in many different fields in relation to web development. I work with graphic designers, UX/UI professinoals, database architechs and managers, and security experts in order to provide a full service, one stop shop for all of my clients needs.</p>
+            <p>Over the years, I have developed a large network of industry professionals who have expertise in many different fields in relation to web development. I work with graphic designers, UX/UI professionals, database architechs and managers, and security experts in order to provide a full service, one stop shop for all of my clients needs.</p>
             <p>Working with my team and I, you can be assured you're going to get a fantastic product that will help your business grow.</p>
           </div>
         </div>
