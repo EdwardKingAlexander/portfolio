@@ -20,8 +20,21 @@
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.js" defer></script>
     </head>
     <body>
+        
+<div x-data="{ sidebar: false, dropdown:false }" 
+class="flex h-screen overflow-hidden bg-gray-100">
+  
+
+@include('admin.partials.sidebar-nav')
+
+
+ @include('admin.partials.profile-dropdown')
+
+
   @yield('content')
-     
+
+</div>
+
         @livewireScripts
     </body>
 </html>
