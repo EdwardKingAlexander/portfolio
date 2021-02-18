@@ -10,6 +10,7 @@ use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SocialUser\DeleteThisUser;
 use App\Http\Controllers\Admin\AdminDashboardController;
+use App\Http\Controllers\Admin\AdminUserController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\WhyUsController;
 use App\Http\Middleware\Honeypot;
@@ -41,6 +42,7 @@ Route::get('/admin/create-blog-post', function()
 });
 
 Route::get('/admin', [AdminDashboardController::class, 'index']);
+Route::resource('/admin/users', AdminUserController::class);
 
 
 
