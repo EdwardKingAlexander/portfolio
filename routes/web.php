@@ -46,14 +46,14 @@ Route::post('/admin/users', [AdminUserController::class, 'store'])->name('users.
 Route::delete('/admin/users/{id}', [AdminUserController::class, 'destroy'])->name('users.destroy');
 
 // Admin Blog Routes
-Route::get('/admin/blog', [AdminBlogController::class, 'index']);
-Route::get('/admin/blog/create', [AdminBlogController::class,'create']);
+Route::resource('/admin/blog', AdminBlogController::class);
 
 
 // Regular page routes
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/blog', [BlogController::class, 'index']);
+Route::get('/blog/{id}', [BlogController::class, 'show']);
 
 Route::get('/portfolio', [PortfolioController::class, 'index']);
 

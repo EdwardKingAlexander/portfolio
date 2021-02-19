@@ -11,4 +11,10 @@ class BlogController extends Controller
     {
         return view('blog.index');
     }
+
+    public function show($id)
+    {
+        return view('blog.show')
+        ->with('post', Blog::find($id));
+    }
 }

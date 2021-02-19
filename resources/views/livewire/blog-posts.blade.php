@@ -16,18 +16,18 @@
                     Blog Post
                   </a>
                 </p>
-                <a href="#" class="block">
+                <a href="{{ url('/blog')}}/{{$post->id}}" class="block">
                   <h3 class="mt-2 text-xl font-semibold leading-7 text-gray-900 hover:text-blue-400">
                     {{ $post->title }}
                   </h3>
                   <p class="mt-3 text-base leading-6 text-gray-500">
-                   {{ Str::limit($post->body, 120) }}
+                   {!! Str::limit($post->body, 120) !!}
                   </p>
                 </a>
               </div>
               <div class="flex items-center mt-6">
                 <div class="flex-shrink-0">
-                  <a href="#">
+                  <a href="{{ url('/blog')}}/{{$post->id}}">
                     <img class="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
                   </a>
                 </div>
@@ -39,13 +39,10 @@
                   </p>
                   <div class="flex text-sm leading-5 text-gray-500">
                     <time datetime="2020-03-16">
-                      Mar 16, 2020
+                      {{ $post->created_at->format('d/m/Y') }}
                     </time>
                     <span class="mx-1">
                       &middot;
-                    </span>
-                    <span>
-                      6 min read
                     </span>
                   </div>
                   <p class="">  @foreach ($post->tags as $tag)

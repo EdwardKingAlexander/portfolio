@@ -18,10 +18,16 @@ class Blog extends Model
     protected $fillable = [
         'title',
         'body',
+        'author'
     ];
 
     public function tags()
     {
         return $this->belongsToMany(Tag::class)->withTimestamps();
+    }
+
+    public function author()
+    {
+        return $this->belongsTo(User::class);
     }
 }

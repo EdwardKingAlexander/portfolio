@@ -70,4 +70,9 @@ class User extends Authenticatable
     {
         return $this->admin;
     }
+
+    public function blogPosts()
+    {
+        return $this->hasMany(Blog::class);
+    }
 }

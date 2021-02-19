@@ -7,10 +7,21 @@
 
 <div class="w-3/4 mx-auto mt-3">
   
-<form class="space-y-8 divide-y divide-gray-200">
+<form action="{{ route('blog.store') }}" method="POST" class="space-y-8 divide-y divide-gray-200">
+  @csrf
   <div class="space-y-8 divide-y divide-gray-200">
     <div>
       <div>
+        @error('title')
+          {{$message}}
+        @enderror
+        @error('body')
+
+        @error('author')
+        {{$message}}
+      @enderror
+        {{$message}}
+      @enderror
         <h3 class="text-lg font-medium leading-6 text-gray-900">
           Create a New Blog Post
         </h3>
@@ -21,8 +32,9 @@
           <label for="title" class="block text-sm font-medium text-gray-700">
             Title
           </label>
+          
           <div class="flex mt-1 rounded-md shadow-sm">
-            <input type="text" name="title" id="title" class="flex-1 block w-full min-w-0 border-gray-300 rounded-none focus:ring-blue-500 focus:border-blue-500 rounded-r-md sm:text-sm">
+            <input type="text" name="title" id="title" value="{{ old('title') }}" class="flex-1 block w-full min-w-0 border-gray-300 rounded-none focus:ring-blue-500 focus:border-blue-500 rounded-r-md sm:text-sm">
           </div>
         </div>
 
@@ -32,7 +44,7 @@
           </label>
           <div class="mt-1">
 
-            <textarea name="body" id="body" cols="30" rows="15"></textarea>
+            <textarea name="body" id="body" cols="30" rows="20">{{ old('body') }}</textarea>
           </div>
         </div>
 
@@ -46,9 +58,6 @@
 
   <div class="pt-5">
     <div class="flex justify-end">
-      <button type="button" class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-        Cancel
-      </button>
       <button type="submit" class="inline-flex justify-center px-4 py-2 ml-3 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
         Publish
       </button>

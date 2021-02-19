@@ -18,4 +18,21 @@ class AdminBlogController extends Controller
     {
         return view('admin.blog.create');
     }
+
+    public function store(Request $request)
+    {
+        $request->validate([
+            'title' => 'required|string|max:255|min:10',
+            'body' => 'required',
+        ]);
+
+
+        Blog::create([
+            'title' => $request->title,
+            'body' => $request->body,
+            'user_id' => auth()->user()->id
+        ]);
+
+        return redirect('/blog');
+    }
 }
