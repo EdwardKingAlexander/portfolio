@@ -1,22 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers;
 
-use App\Actions\Fortify\PasswordValidationRules;
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
-use App\Models\User;
 
-class AdminUserController extends Controller
+class AdminCustomerController extends Controller
 {
-    use PasswordValidationRules;
-
-    public function __construct()
-    {
-        $this->middleware('admin');
-    }
-
     /**
      * Display a listing of the resource.
      *
@@ -24,8 +13,7 @@ class AdminUserController extends Controller
      */
     public function index()
     {
-        return view('admin.users.index')
-        ->with('users', User::paginate(25));
+        //
     }
 
     /**
@@ -35,7 +23,7 @@ class AdminUserController extends Controller
      */
     public function create()
     {
-        return view('admin.users.create');
+        //
     }
 
     /**
@@ -46,19 +34,7 @@ class AdminUserController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => $this->passwordRules()
-        ]);
-
-        User::create([
-            'name' => $request['name'],
-            'email' => $request['email'],
-            'password' => Hash::make($request['password']),
-        ]);
-
-        return redirect('/admin/users');
+        //
     }
 
     /**
@@ -69,8 +45,7 @@ class AdminUserController extends Controller
      */
     public function show($id)
     {
-        return view('admin.users.show')
-        ->with('user', User::find($id));
+        //
     }
 
     /**
@@ -81,8 +56,7 @@ class AdminUserController extends Controller
      */
     public function edit($id)
     {
-        return view('admin.users.edit')
-        ->with('user', User::find($id));
+        //
     }
 
     /**
@@ -105,9 +79,6 @@ class AdminUserController extends Controller
      */
     public function destroy($id)
     {
-        $user = User::find($id);
-        $user->delete();
-
-        return redirect('/admin/users');
+        //
     }
 }
