@@ -82,7 +82,7 @@
         
 
         <div class="w-1/2 col-span-2 mx-auto my-auto md:col-span-1">
-        <h2 class="text-4xl text-left"><a class="hover:text-blue-800" href="https://www.professionalwindowcleaning.com" title="Link to the Absolutely Clear Window Cleaning Website">Absolutely Clear Window Cleaning LLC</a></h2>
+        <h2 class="text-4xl text-left"><a class="hover:text-blue-800" href="https://www.professionalwindowclean.com" title="Link to the Absolutely Clear Window Cleaning Website">Absolutely Clear Window Cleaning LLC</a></h2>
         </div>
 
         <div class="justify-center col-span-2 md:col-span-1">
