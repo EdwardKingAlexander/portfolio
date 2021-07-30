@@ -12,8 +12,8 @@
           Cost effective hosting services according to your specific needs. Whether you have a simple WordPress site, or a large online business, we'll provide the right hosting services for your application's needs
         </x-services>
 
-        <x-services service="Web Design and SEO">
-          Need a brand new website, a redesign, or need to optimize your existing website for modern search engine results? We use industry best practices to ensure your website is up to date in all the latest standards and design every website to be mobile responsive, craft the content to maximize engagement, and dial in the site's performance to get you listed in Google, Bing, Yahoo, and every other relevant search engine
+        <x-services service="Web Design">
+          Need a brand new website or a redesign? We use industry best practices to ensure your website is up to date with all the latest standards. We design every website to be mobile responsive, craft the content to maximize engagement, and dial in the site's performance to get you listed in Google, Bing, Yahoo, and every other relevant search engine
         </x-services>
 
         <x-services service="Graphic Design">
@@ -23,6 +23,7 @@
         <x-services service="Social Media Marketing">
           At the end of the day, being online means nothing if you aren't seen. If you want meaningful traffic that will turn into loyal customers, you need to work with experts in targeting and capturing your specific audience. That's us
         </x-services>
+
       
       </dl>
     </div>

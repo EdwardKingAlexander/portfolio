@@ -48,6 +48,17 @@
           </div>
         </div>
 
+
+        <div>
+          <label for="tags" class="block text-sm font-medium text-gray-700">Tags</label>
+          <select id="tags" multiple
+           name="tags[]" class="block w-full py-2 pl-3 pr-10 mt-1 text-base border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+            @foreach($tags as $tag)
+            <option value="{{ $tag->id }}">{{ $tag->tag }}</option>
+            @endforeach
+          </select>
+        </div>
+        
        
       </div>
     </div>
@@ -55,6 +66,8 @@
   
     
   </div>
+
+  <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
 
   <div class="pt-5">
     <div class="flex justify-end">

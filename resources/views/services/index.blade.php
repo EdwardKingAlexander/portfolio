@@ -75,10 +75,10 @@
             </div>
             <div class="mt-5">
               <dt class="text-lg font-medium leading-6 text-gray-900">
-                Web Design and SEO
+                Web Design
               </dt>
               <dd class="mt-2 text-base text-gray-500">
-                Need a brand new website, a redesign, or need to optimize your existing website for modern search engine results? We have you covered. We use the latest industry best practices to ensure your website is up to date in all the latest standards. We design every website to be mobile responsive, craft the content to maximize engagement, and dial in the site's performance rankings to get you listed in Google, Bing, Yahoo, and every other relevant search engine
+                Need a brand new website or a redesign? We use industry best practices to ensure your website is up to date with all the latest standards. We design every website to be mobile responsive, craft the content to maximize engagement, and dial in the site's performance to get you listed in Google, Bing, Yahoo, and every other relevant search engine
               </dd>
             </div>
           </div>
@@ -99,6 +99,42 @@
               </dd>
             </div>
           </div>
+
+          <div>
+            <div class="flex items-center justify-center w-12 h-12 text-white bg-blue-400 rounded-md">
+              <!-- Heroicon name: mail -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div class="mt-5">
+              <dt class="text-lg font-medium leading-6 text-gray-900">
+                Mobile App Development
+              </dt>
+              <dd class="mt-2 text-base text-gray-500">
+                Without an app, many businesses are missing out on an effective way to grow their business. On average, mobile internet users spend up to 90% of their time of apps, rather than browsing the web. With the ability to directly reach your customers with push notifications, you can be sure that you are maximizing your return on investment and your customer engagements
+              </dd>
+            </div>
+          </div>
+
+
+          <div>
+            <div class="flex items-center justify-center w-12 h-12 text-white bg-blue-400 rounded-md">
+              <!-- Heroicon name: mail -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+              </svg>
+            </div>
+            <div class="mt-5">
+              <dt class="text-lg font-medium leading-6 text-gray-900">
+                Search Engine Optimization Audit
+              </dt>
+              <dd class="mt-2 text-base text-gray-500">
+                Many businesses already have websites and the web is constantly changing. As a result, best practices for search engine optimization are always evolving. We can run your existing website through a detailed list of current best practices to see where you could be missing out on opportunities to increase your website's page rank in Google or Bing. After all, a minimum of 71% of all visited websites found on Google, come from the first search results page
+              </dd>
+            </div>
+          </div>
+
         </dl>
       </div>
     </div>

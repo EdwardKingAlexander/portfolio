@@ -17,4 +17,6 @@ class BlogController extends Controller
         return view('blog.show')
         ->with('post', Blog::find($id));
     }
+
+ 
 }

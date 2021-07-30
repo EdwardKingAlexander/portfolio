@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Models\Tag;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class Blog extends Model
 {
@@ -18,12 +19,13 @@ class Blog extends Model
     protected $fillable = [
         'title',
         'body',
-        'author'
+        'user_id',
     ];
+
 
     public function tags()
     {
-        return $this->belongsToMany(Tag::class)->withTimestamps();
+        return $this->belongsToMany(Tag::class, 'blog_tag')->withTimestamps();
     }
 
     public function author()

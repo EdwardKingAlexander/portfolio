@@ -35,7 +35,9 @@
         @yield('head')
     </head>
     <body>
-    @include('partials.nav')
+    @livewire('nav-bar')
+
+    
     <div>
         {{ $slot }}
     </div>
