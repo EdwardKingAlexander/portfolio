@@ -214,4 +214,8 @@
   @endif
   {{-- End of blog div --}}
     </div>
+    @foreach ($errors->all() as $message) 
+        {{ $message }}
+    @endforeach
+  
 </div>

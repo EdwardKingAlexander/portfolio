@@ -13,6 +13,7 @@ use App\Http\Controllers\SocialUser\DeleteThisUser;
 use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Admin\AdminUserController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\SubscribeController;
 use App\Http\Controllers\WhyUsController;
 use App\Http\Middleware\Honeypot;
 use UniSharp\LaravelFilemanager\Lfm;
@@ -33,6 +34,9 @@ Route::get('/loggedin', function()
     return 'logged in with linked in';
 });
 
+
+// Subscribe to newsletter routes
+Route::post('/subscribe-to-newsletter', [SubscribeController::class, 'store'])->name('subscribe-to-newsletter');
 
 // Route to Manually delete user for auth users
 Route::post('/delete-user', [DeleteThisUser::class, 'delete'])->name('delete-user');

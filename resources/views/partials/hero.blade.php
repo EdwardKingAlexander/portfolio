@@ -7,7 +7,7 @@
           <span class="text-blue-400">for small businesses</span>
         </h1>
         <p class="max-w-md mx-auto mt-3 text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
-        We provide hosting, SEO, website design, and more. Locally owned and operated, we provide everything you need to increase your clientile.   
+        We provide hosting, SEO, website design, and more. Locally owned and operated, we provide everything you need to increase your clientele.  
         </p>
         <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
           <div class="rounded-md shadow">

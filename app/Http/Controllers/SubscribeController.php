@@ -35,7 +35,23 @@ class SubscribeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'email' => 'required|unique:subscribed|email'
+        ]);
+
+
+        Subscribe::create([
+            'email' => $request->email
+        ]);
+
+        return redirect('/');
+
+
+
+        // validate the email address as a valid email
+        // store the email in the database
+        // return to the homepage with a message
+        // flash the message for 2-3 seconds
     }
 
     /**

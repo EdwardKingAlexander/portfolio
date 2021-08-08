@@ -1,7 +1,3 @@
-<!--
-  Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
-  Read the documentation to get started: https://tailwindui.com/documentation
--->
 <footer class="bg-blue-400">
   <div class="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8">
     <div class="xl:grid xl:grid-cols-3 xl:gap-8">
@@ -92,9 +88,10 @@
         <p class="mt-4 text-base leading-6 text-gray-300">
           The latest news, articles, and resources, sent directly to your inbox.
         </p>
-        <form class="mt-4 sm:flex sm:max-w-md">
+        <form action="{{route('subscribe-to-newsletter')}}" method="POST" class="mt-4 sm:flex sm:max-w-md">
+          @csrf
           <label for="emailAddress" class="sr-only">Email address</label>
-          <input type="email" id="emailAddress" required class="w-full min-w-0 px-4 py-2 text-base leading-6 text-gray-900 placeholder-gray-500 transition duration-150 ease-in-out bg-white border border-transparent rounded-md appearance-none focus:outline-none focus:shadow-outline-gray focus:placeholder-gray-400" placeholder="Enter your email">
+          <input type="email" id="email" name="email" required class="w-full min-w-0 px-4 py-2 text-base leading-6 text-gray-900 placeholder-gray-500 transition duration-150 ease-in-out bg-white border border-transparent rounded-md appearance-none focus:outline-none focus:shadow-outline-gray focus:placeholder-gray-400" placeholder="Enter your email">
           <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
             <button type="submit" class="flex items-center justify-center w-full px-4 py-2 text-base font-medium leading-6 text-blue-500 transition duration-150 ease-in-out bg-white border border-transparent rounded-md hover:bg-gray-200 focus:outline-none focus:border-blue-600 focus:shadow-outline-blue active:bg-blue-600">
               Subscribe
